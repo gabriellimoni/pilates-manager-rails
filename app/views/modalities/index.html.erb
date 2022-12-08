@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Modalities</h1>
+
+<div id="modalities">
+  <% @modalities.each do |modality| %>
+    <%= render modality %>
+    <p>
+      <%= link_to "Show this modality", modality %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New modality", new_modality_path %>
